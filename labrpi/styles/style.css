@@ -1,0 +1,278 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.arrow-link {
+	color: white;
+}
+
+a.nav-link, a.website-link {
+	color: rgb(235,235,235);
+}
+
+body {
+	width: 100vw;
+	margin: 0px;
+	font-family: Verdana;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+nav {
+	background-color: rgb(55,60,63);
+	width: 100%;
+	color: rgb(235,235,235);
+	flex-direction: column;
+}
+
+div.first-block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: rgb(0,255,64);
+	justify-content: center;
+	padding-left: 10%;
+	padding-right: 32%;
+	height: 66vw;
+}
+
+div.first-block-line {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+p.website-description {
+	font-size: 5vw;
+	margin: 0.75em 0em;
+	color: white;
+}
+
+p.first-block-link {
+	display: inline;
+	font-size: 3vw;
+	color: rgb(166,212,222);
+	margin: 0.75em 0em;
+}
+
+p.first-block-arrow {
+	display: inline;
+	font-size: 3vw;
+	margin: 0.75em 0em;
+	color: white;
+}
+
+div.second-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 24vw;
+}
+
+div.second-block-title {
+	display: inline-flex;
+	width: 78%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(39,33,44);
+}
+
+p.second-block-title {
+	color: rgb(146,130,160);
+	font-size: 3vw;
+}
+
+div.second-block-arrow {
+	display: inline-flex;
+	background-color: rgb(188,49,131);
+	height: 100%;
+	width: 22%;
+	justify-content: center;
+    align-items: center;
+}
+
+p.second-block-arrow {
+	font-size: 5vw;
+	color: white;
+}
+
+section.center {
+	width: 100%;
+	display: flex;
+}
+
+div.third-block {
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(91,15,161);
+}
+
+p.third-block-arrow {
+	font-size: 10vw;
+	color: white;
+}
+
+img.hero-image, img.flag-image {
+	width: 100%;
+	height: 100%;
+}
+
+section.text-block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(235,235,235);
+}
+
+h3.text-block-title {
+	color: rgb(8,140,165);
+	margin-top: 0px;
+}
+
+article.text-block-article {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+p.text-block-paragraph {
+	color: rgb(81,81,81);
+}
+
+@media (max-width: 979px)
+{	
+	div.top-block-mobile {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+		height: 11.5625vw;
+	}
+
+	div.top-block-desktop {
+		display: none;
+	}
+	
+	div.nav-text {
+		display: inline;
+		padding-left: 4vw;
+		font-size: 4vw;
+	}
+	
+	div.nav-button {
+		display: inline;
+		height: 100%;
+	}
+	
+	img.nav-button {
+		height: 100%;
+		width: 15vw;
+	}
+	
+	section.center {
+		flex-direction: column;
+	}
+	
+	div.third-block {
+		display: flex;
+		width: 100%;
+		height: 86.875vw;
+	}
+	
+	div.hero-block {
+		width: 100%;
+		height: 86.5625vw;
+	}
+	
+	div.flag-block {
+		width: 100%;
+		height: 87.03125vw;
+	}
+	
+	section.text-block {
+		padding: 12vw;
+	}
+	
+	h3.text-block-title {
+		font-size: 6vw;
+	}
+	
+	div.second-text-column {
+		display: none;
+	}
+	
+	p.text-block-paragraph {
+		font-size: 4vw;
+	}
+}
+
+@media (min-width: 980px) {
+	div.top-block-mobile {
+		display: none;
+	}
+	
+	div.top-block-desktop {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 9.5vw;
+		padding-left: 3.8vw;
+	}
+	
+	span.menu-entry {
+		padding: 0vw 1.5vw;
+		font-size: 1.5vw;
+		color: rgb(235,235,235);
+	}
+	
+	section.center {
+		flex-direction: row;
+		height: 29vw;
+	}
+	
+	div.third-block {
+		display: inline-flex;
+		width: calc(100% / 3);
+		height: 100%;
+	}
+	
+	div.hero-block {
+		display: inline-flex;
+		width: calc(100% );
+		height: 100%;
+	}
+	
+	div.flag-block {
+		display: inline-flex;
+		width: calc(100% / 3);
+		height: 100%;
+	}
+	
+	section.text-block {
+		padding: 6vw;
+	}
+	
+	h3.text-block-title {
+		font-size: 4vw;
+		padding-left: 2vw;
+		padding-top: 2vw;
+	}
+	
+	div.first-text-column, div.second-text-column {
+		padding: 0vw 2vw;
+	}
+	
+	p.text-block-paragraph {
+		font-size: 2vw;
+	}
+}
